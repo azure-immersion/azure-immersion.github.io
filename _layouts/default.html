@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
     <title>
-        {{ site.title }} - {{ page.title }}
+        Azure Immersion Labs
     </title>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
@@ -293,28 +293,14 @@
 </head>
 <body>
     <nav class="navbar navbar-expand-lg navbar-dark bg-black">
-        <div class="container d-flex justify-content-between">
+        <div class="container">
             <h2 class="my-1 text-azure text-uppercase">
-                {{ site.title }}
+                Azure Immersion Labs
             </h2>
-            <a href="{{ site.github.repository_url }}" target="_blank" class="btn btn-sm btn-outline-secondary text-light">
-                <i class="fa fa-github" aria-hidden="true"></i>
-                <span class="ml-2">GitHub</span>
-            </a>
         </div>
     </nav>
     <div class="container">
-        <main class="row">
-            <aside class="col-sm-2">
-                <nav class="toc">
-                  <ul>
-                      <li{% if page.url == "/index.html" or page.url == "/" or page.url == "" %} class="bg-note"{% endif %}>
-                          <a href="index.html">Home</a>
-                      </li>
-                  </ul>
-              </nav>
-            </aside>
-            <hr class="" />
+        <main>
             <article class="col-sm-10">
                 {{ content }}
             </article>
